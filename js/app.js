@@ -45,15 +45,26 @@ const arrayOurTeam = [
 // Stampare le stesse informazioni su DOM semplicemente come stringhe
 
 
+// BONUS 1:
+// Trasformare la stringa foto in una immagine effettiva
+
 for(let i = 0; i < arrayOurTeam.length; i++){
     let currentMember = arrayOurTeam[i];
     console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
-    
-
-    const infoMember = document.createElement('li');
-    infoMember.innerHTML = currentMember.name + currentMember.role + currentMember.profileImg;
 
     const appendInfo = document.getElementById('list');
+    let infoMember = document.createElement('li');
+
+    infoMember.innerHTML += 
+    `
+    <div>
+        <img src="./img/${currentMember.profileImg}" alt="">
+        <strong>NAME</strong>
+        <p>${currentMember.name}</p>
+        <strong>ROLE</strong>
+        <p>${currentMember.role}</p>
+    </div>
+    `
 
     appendInfo.append(infoMember);
 }
