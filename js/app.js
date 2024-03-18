@@ -63,6 +63,7 @@ for(let i = 0; i < arrayOurTeam.length; i++){
         <img src="./img/${currentMember.profileImg}" alt="">
         <p class="text-primary mt-2 mb-0">${currentMember.name}</p>
         <p>${currentMember.role}</p>
+        <button type="button" class="btn btn-primary align-self-center mb-3">Contact</button>
     </div>
     `
 
