@@ -41,10 +41,37 @@ const arrayOurTeam = [
 // MILESTONE 1:
 // Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
 
+// MILESTONE 2:
+// Stampare le stesse informazioni su DOM semplicemente come stringhe
+
+
 for(let i = 0; i < arrayOurTeam.length; i++){
     let currentMember = arrayOurTeam[i];
-    console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
+    // console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
+    
+
+
+    let appendInfo = document.getElementById('list')
+    let infoMember = document.createElement('div');
+    
+    
+    for(let key in currentMember){
+        
+
+    }
+
+    
+    
+
+
+    
 }
+
+
+
+
+
+
 
 
 
