@@ -47,24 +47,15 @@ const arrayOurTeam = [
 
 for(let i = 0; i < arrayOurTeam.length; i++){
     let currentMember = arrayOurTeam[i];
-    // console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
+    console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
     
 
+    const infoMember = document.createElement('li');
+    infoMember.innerHTML += currentMember.name
 
-    let appendInfo = document.getElementById('list')
-    let infoMember = document.createElement('div');
-    
-    
-    for(let key in currentMember){
-        
+    const appendInfo = document.getElementById('list');
 
-    }
-
-    
-    
-
-
-    
+    appendInfo.append(infoMember.innerHTML);
 }
 
 
