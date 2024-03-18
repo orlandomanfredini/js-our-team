@@ -52,16 +52,16 @@ for(let i = 0; i < arrayOurTeam.length; i++){
     let currentMember = arrayOurTeam[i];
     console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
 
-    const appendInfo = document.getElementById('list');
-    let infoMember = document.createElement('li');
+    const appendInfo = document.getElementById('row');
+    let infoMember = document.createElement('div');
 
-    infoMember.innerHTML += 
+    infoMember.classList.add('col-4','g-3')
+
+    infoMember.innerHTML = 
     `
-    <div>
+    <div class="card text-center">
         <img src="./img/${currentMember.profileImg}" alt="">
-        <strong>NAME</strong>
-        <p>${currentMember.name}</p>
-        <strong>ROLE</strong>
+        <p class="text-primary mt-2 mb-0">${currentMember.name}</p>
         <p>${currentMember.role}</p>
     </div>
     `
