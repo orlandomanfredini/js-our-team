@@ -35,7 +35,18 @@ const arrayOurTeam = [
 
 ]
 
-console.log(arrayOurTeam);
+// console.log(arrayOurTeam);
+
+
+// MILESTONE 1:
+// Stampare su console, per ogni membro del team, le informazioni di nome, ruolo e la stringa della foto
+
+for(let i = 0; i < arrayOurTeam.length; i++){
+    let currentMember = arrayOurTeam[i];
+    console.log('Il nome è: ' + currentMember.name, 'Il ruolo è: ' + currentMember.role,'La sua immagine profilo è: ' + currentMember.profileImg);
+}
+
+
 
 
 // DATI:
