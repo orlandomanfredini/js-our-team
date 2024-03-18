@@ -51,11 +51,11 @@ for(let i = 0; i < arrayOurTeam.length; i++){
     
 
     const infoMember = document.createElement('li');
-    infoMember.innerHTML += currentMember.name
+    infoMember.innerHTML = currentMember.name + currentMember.role + currentMember.profileImg;
 
     const appendInfo = document.getElementById('list');
 
-    appendInfo.append(infoMember.innerHTML);
+    appendInfo.append(infoMember);
 }
 
 
